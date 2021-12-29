@@ -134,10 +134,10 @@ const titleForRun = (run) => {
   if (runHour > 10 && runHour <= 14) {
     return RUN_TITLES.MIDDAY_RUN_TITLE;
   }
-  if (runHour > 14 && runHour <= 18) {
+  if (runHour > 14 && runHour <= 16) {
     return RUN_TITLES.AFTERNOON_RUN_TITLE;
   }
-  if (runHour > 18 && runHour <= 21) {
+  if (runHour > 16 && runHour <= 18) {
     return RUN_TITLES.EVENING_RUN_TITLE;
   }
   return RUN_TITLES.NIGHT_RUN_TITLE;
