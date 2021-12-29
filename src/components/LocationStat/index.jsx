@@ -15,11 +15,8 @@ const LocationStat = ({ changeYear, changeCity, changeTitle }) => (
         {CHINESE_LOCATION_INFO_MESSAGE_FIRST}
         .
         <br />
-        {CHINESE_LOCATION_INFO_MESSAGE_SECOND}
-        .
         <br />
-        <br />
-        Yesterday you said tomorrow.
+        Keep running.
       </p>
     </section>
     <hr color="red" />

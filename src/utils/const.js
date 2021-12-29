@@ -1,6 +1,6 @@
 // const
 const MAPBOX_TOKEN =
-  'pk.eyJ1IjoieWlob25nMDYxOCIsImEiOiJja2J3M28xbG4wYzl0MzJxZm0ya2Fua2p2In0.PNKfkeQwYuyGOTT_x9BJ4Q';
+  'pk.eyJ1IjoiYWppZXc0MiIsImEiOiJja3g0ZmtjOXYwNWsxMnZwYWtpdGd5YWJ3In0.Rqhlg8V2Iz1Gelotxfil4w';
 const MUNICIPALITY_CITIES_ARR = [
   '北京市',
   '上海市',
@@ -55,6 +55,8 @@ export {
   USE_ANIMATION_FOR_GRID,
 };
 
-const nike = 'rgb(224,237,94)'; // if you want change the main color change here src/styles/variables.scss
+// if you want change the main color, change here src/styles/variables.scss
+// const nike = 'rgb(224,237,94)';
+const nike = 'rgb(17,212,224)';
 export const MAIN_COLOR = nike;
 export const PROVINCE_FILL_COLOR = '#47b8e0';
