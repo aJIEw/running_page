@@ -3,6 +3,7 @@ module.exports = {
   siteMetadata: {
     siteTitle: 'Running',
     siteUrl: 'https://running.ajiew.me',
+    siteRootUrl: 'https://ajiew.me',
     logo: 'https://avatars1.githubusercontent.com/u/13328707?s=200&v=4',
     description: 'aJIEw\'s running page',
     navLinks: [
