@@ -112,15 +112,9 @@ jobs:
           python scripts/gen_svg.py --from-db --type circular --use-localtime
           python scripts/gen_svg.py --from-db --year $(date +"%Y")  --language zh_CN --title "$(date +"%Y") Running" --type github --athlete "${{ env.ATHLETE }}" --min-distance 0.5 --special-distance 7 --special-distance2 7 --special-color deepskyblue --special-color2 mediumblue --output assets/github_$(date +"%Y").svg --use-localtime
 
-      - name: work around permission issue
-        run: git config --global --add safe.directory /github/workspace
-
       - name: Push new runs
-        uses: github-actions-x/commit@v2.6
-        with:
-          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
-          commit-message: "Add new runs"
-          files: activities src/static/ scripts/ assets/ GPX_OUT/
-          rebase: 'true'
-          name: ${{ env.GITHUB_NAME }}
-          email: ${{ env.GITHUB_EMAIL }}
+        run: |
+          git config --local user.email "${{ env.GITHUB_EMAIL }}"
+          git config --local user.name "${{ env.GITHUB_EMAIL }}"
+          git commit -a -m 'docs: update readme.md' || echo "nothing to commit"
+          git push || echo "nothing to push"
