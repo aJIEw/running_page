@@ -2,14 +2,14 @@ module.exports = {
   pathPrefix: `/`, // Change to `/running_page` when running on github pages
   siteMetadata: {
     siteTitle: 'Running',
-    siteUrl: 'https://running.ajiew.me',
-    siteRootUrl: 'https://ajiew.me',
+    siteUrl: 'https://running-page-byp.pages.dev',
+    siteRootUrl: 'https://ajiew.github.io',
     logo: 'https://avatars1.githubusercontent.com/u/13328707?s=200&v=4',
     description: 'aJIEw\'s running page',
     navLinks: [
       {
         name: '👋 ME',
-        url: 'https://ajiew.me',
+        url: 'https://ajiew.github.io',
       },
       {
         name: '👏 SOURCE',
